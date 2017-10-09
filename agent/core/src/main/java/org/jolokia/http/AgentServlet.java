@@ -15,6 +15,8 @@ import org.jolokia.backend.BackendManager;
 import org.jolokia.config.*;
 import org.jolokia.discovery.AgentDetails;
 import org.jolokia.discovery.DiscoveryMulticastResponder;
+import org.jolokia.push.PushConfig;
+import org.jolokia.push.PushWorker;
 import org.jolokia.restrictor.*;
 import org.jolokia.util.*;
 import org.json.simple.JSONAware;
@@ -81,6 +83,9 @@ public class AgentServlet extends HttpServlet {
 
     // wheter to allow streaming mode for response
     private boolean streamingEnabled;
+    
+    // To push event
+    private PushWorker pushWorker;
 
     /**
      * No argument constructor, used e.g. by an servlet
@@ -143,6 +148,9 @@ public class AgentServlet extends HttpServlet {
         streamingEnabled = config.getAsBoolean(ConfigKey.STREAMING);
 
         initDiscoveryMulticast(config);
+        
+        // Create PushWorker
+        pushWorker = new PushWorker(requestHandler, PushConfig.createTypeList(), PushConfig.createProducerList(), logHandler);
     }
 
     /**

@@ -12,3 +12,4 @@ felix
 .project
 .gitshots
 test-output
+/build/
