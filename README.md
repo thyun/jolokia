@@ -10,4 +10,4 @@ Until now this feature is experimental, but it's working.
 * jolokia agent -> Logstash -> Kafka/Elasticsearch ...
 
 ## Screenshots of Grafana
-
+![Grafana](https://user-images.githubusercontent.com/4827162/32880796-4a335658-caf2-11e7-8d48-7ed34c5a27fe.png)
