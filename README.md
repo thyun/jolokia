@@ -4,7 +4,7 @@ Added new feature to version 1.3.7 that jolokia agent pushes JMX data to HTTP se
 Until now this feature is experimental, but it's working.
 
 ## Features
-* Push JMX data - Via HTTP only. Can be used with Logstash.
+* Send JMX data to remote server - Via HTTP only. Can be used with Logstash.
 
 ## Example JMX data flow
 * jolokia agent -> Logstash -> Kafka/Elasticsearch ...
