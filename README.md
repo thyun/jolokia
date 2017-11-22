@@ -10,7 +10,7 @@ Until now this feature is experimental, but it's working.
 * jolokia agent -> Logstash -> Kafka/Elasticsearch ...
 
 ## Hot to use
-* Download and unzip jolokia-core-1.3.7.jar.zip from https://github.com/thyun/jolokia/files/1491443/jolokia-core-1.3.7.jar.zip
+* Download and unzip jolokia-core-1.3.7.jar.zip from https://github.com/thyun/jolokia/files/1494605/jolokia-core-1.3.7.jar.zip
 * Add jar to your project
 * Build and install your project
 * Make jolokia-push.conf like below and put the file to your install directory of your project
