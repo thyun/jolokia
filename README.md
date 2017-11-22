@@ -9,7 +9,7 @@ Until now this feature is experimental, but it's working.
 ## Example JMX data flow
 * jolokia agent -> Logstash -> Kafka/Elasticsearch ...
 
-## Hot to use
+## How to use
 * Download and unzip jolokia-core-1.3.7.jar.zip from https://github.com/thyun/jolokia/files/1494605/jolokia-core-1.3.7.jar.zip
 * Add jar to your project
 * Build and install your project
