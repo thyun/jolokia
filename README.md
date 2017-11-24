@@ -1,6 +1,6 @@
-Jolokia for push model.
+# Jolokia push - Jolokia pushes JMX data to remote server
 
-Added new feature to version 1.3.7 that jolokia agent pushes JMX data to HTTP server.
+Added new feature to jolokia version 1.3.7 so that jolokia agent pushes JMX data to HTTP server.
 Until now this feature is experimental, but it's working.
 
 ## Features
@@ -24,7 +24,7 @@ Until now this feature is experimental, but it's working.
                 "java.lang:type=GarbageCollector,name=PS Scavenge"
         ],
         "producers": [
-        {
+                {
                         "type": "http",
                         "url": "http://172.22.241.214:8080/v1/track"
                 }
